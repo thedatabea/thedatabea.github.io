@@ -1,16 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class='no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 '> <![endif]-->
+<!--[if IE 7]><html class='no-js lt-ie10 lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]><html class='no-js lt-ie10 lt-ie9'> <![endif]-->
+<!--[if IE 9]><html class='no-js lt-ie10'> <![endif]-->
+<!--[if gt IE 8]><!-->
+
 <html>
 <head>
-    <title>Buttons & Panels | jQuery Exercise</title>
 
-    <meta charset="utf-8" />
+    <!-- Basic Page Needs -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Buttons & Panels | jQuery Exercise</title>
+    <meta name='description' content=''>
+    <meta name='author' content=''>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+	    <!-- CSS -->
+    <link rel='stylesheet' href='css/styles.css' type='text/css'>
+	<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css'>
+	<link rel='stylesheet' href='css/normalize.css' type='text/css'>
 
     <style type="text/css">
     .jumbotron {
@@ -20,8 +37,28 @@
         width: 100px;
         height: 40px;
     }
-    </style>
+    </style>	
+	
 </head>
+
+<!-- Main menu-->
+<nav>
+<ul>
+  <li><a href='/index.html'>Home</a></li>
+  <li><a href='#'>Resume</a></li>
+  <li class='dropdown'><a href='#' class='dropdown-btn'>Exercises</a>
+    <div class='dropdown-menu'>
+      <a href='#'>Panel Sample</a>
+      <a href='#'>App Landing Page</a>
+      <a href='#'>Link 3</a>
+      <a href='#'>Link 4</a>
+  <li><a href='#'>Contact</a></li>
+    </div>
+  </li>
+</ul>
+</nav>
+
+<!-- Section-->	
 <body>
     <div class="container">
         <div class="jumbotron">
@@ -74,24 +111,20 @@
                 </div>
             </div>
         </div>
-		
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>  
+</body>		
+
+<!-- Scripts-->	
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+</script>  
 
 <script>
     $(function() {
   
-      $('#panel1').hide(300).show(1000).fadeToggle(1000).toggle(1000);
-      $('#panel2').hide();
+      $('#panel1').hide(300).show(1000).hide(300).show(1000);
+      $('#panel2').fadeToggle(300).toggle(1000).fadeToggle(1000).toggle(1000);
   });  
   
  </script>
-  
-		
-		
-		
-    </div>
-   
-</body>
   
   
  
